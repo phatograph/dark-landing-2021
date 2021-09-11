@@ -376,6 +376,7 @@ source {
   font-family: Rubik;
   font-size: 12px;
   letter-spacing: 2px;
+  text-align: center;
   text-transform: uppercase;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -389,5 +390,100 @@ source {
     border: 1px solid #f2994a;
     border-radius: 4px;
     background-color: transparent;
+  }
+
+  &--long {
+    padding-right: calc(var(--global-space) * 3);
+    padding-left: calc(var(--global-space) * 3);
+  }
+}
+
+.Hero {
+  margin-top: calc(var(--global-space) * 6);
+
+  &__wrapper {
+    position: relative;
+    max-width: 530px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(var(--global-space) * -1);
+      left: calc(100% + calc(var(--global-space) * 1));
+      width: 724px;
+      height: 580px;
+      background-image: url('/images/Hero.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  &__h1 {
+    color: #99efd0;
+    font-family: Inter;
+    font-size: 44px;
+    font-weight: 900;
+  }
+
+  &__p {
+    margin-top: calc(var(--global-space) * 1);
+    color: #8476aa;
+    font-family: Gilroy-SemiBold;
+    font-size: 18px;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-gap: calc(var(--global-space) * 1);
+    grid-template-columns: repeat(2, 160px);
+    margin-top: calc(var(--global-space) * 1);
+  }
+
+  &__video {
+    display: grid;
+    grid-gap: calc(var(--global-space) * 1);
+    grid-template-columns: max-content 1fr;
+    margin-top: calc(var(--global-space) * 2);
+
+    &__a {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      width: 140px;
+      height: 80px;
+      border-radius: 4px;
+      background-color: #361c5d;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url('/images/Hero__video__a.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+
+    &__right {
+      &__p {
+        color: #8476aa;
+        font-family: Rubik;
+        font-size: 16px;
+      }
+
+      &__a {
+        color: #6d6d78;
+        font-family: Rubik;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__img {
+    margin: calc(var(--global-space) * 5) auto 0;
   }
 }

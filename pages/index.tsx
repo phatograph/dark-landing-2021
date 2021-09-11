@@ -51,6 +51,41 @@ const Index: NextPage<{}> = () => {
             </div>
           </div>
         </div>
+
+        <div className='Hero'>
+          <div className='container'>
+            <div className='Hero__wrapper'>
+              <h1 className='Hero__h1'>
+                Many reasons to get up and start to get back in the business
+              </h1>
+
+              <p className='Hero__p'>
+                The harder you work for something, the greater you’ll feel when
+                you achieve it.
+              </p>
+
+              <div className='Hero__buttons'>
+                <a className='Button Button--shadow'>Learn More</a>
+                <a className='Button Button--orange-border'>Demo</a>
+              </div>
+
+              <div className='Hero__video'>
+                <a className='Hero__video__a' />
+
+                <div className='Hero__video__right'>
+                  <p className='Hero__video__right__p'>
+                    The harder you work for something, the greater you’ll feel
+                    when you achieve it.
+                  </p>
+
+                  <a className='Hero__video__right__a'>Watch preview</a>
+                </div>
+              </div>
+            </div>
+
+            <img className='Hero__img' src='/images/Hero__img.svg' />
+          </div>
+        </div>
       </div>
     </React.Fragment>
   )

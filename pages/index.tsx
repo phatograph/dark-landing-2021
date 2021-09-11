@@ -14,11 +14,45 @@ const Index: NextPage<{}> = () => {
   // const t = _t(router.locale)
 
   return (
-    <div
-      className='Index'
-    >
-      Index
-    </div>
+    <React.Fragment>
+      <div className='Layout'>
+        <div className='Nav'>
+          <div className='container'>
+            <a className='Nav__a' />
+
+            <div className='Nav__links'>
+              {[
+                {
+                  label: 'About',
+                },
+                {
+                  label: 'Gallery',
+                },
+                {
+                  label: 'Pricing',
+                },
+                {
+                  label: 'FAQ',
+                },
+                {
+                  label: 'Benefits',
+                },
+              ].map((x, i) => (
+                <a className='Nav__links__a' key={i}>
+                  {x.label}
+                </a>
+              ))}
+            </div>
+
+            <div className='Nav__right'>
+              <a className='Button Button--orange-border'>SIgn In</a>
+
+              <a className='Button Button--shadow'>Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
   )
 }
 

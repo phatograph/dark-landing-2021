@@ -85,11 +85,11 @@ const MyApp = ({Component, pageProps}: AppProps) => {
         }}
       />
 
-      {false &&
+      {false && (
         <React.Fragment>
-      <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
+          <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
         </React.Fragment>
-      }
+      )}
     </QueryClientProvider>
   )
 }

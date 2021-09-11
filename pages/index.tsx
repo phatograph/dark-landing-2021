@@ -206,6 +206,172 @@ const Index: NextPage<{}> = () => {
             </div>
           </div>
         </div>
+
+        <div className='Invest'>
+          <div className='container'>
+            <div className='Invest__wrapper'>
+              <h2 className='Invest__h2'>
+                Invest property for better <span>business</span>
+              </h2>
+
+              <p className='Invest__p'>
+                We are committed to processing the information in order to
+                contact you and talk about your project. We are committed to
+                processing the information.
+              </p>
+
+              <div className='Invest__buttons'>
+                <a className='Button Button--shadow Button--long'>Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='HelpFinding'>
+          <div className='container'>
+            <div className='HelpFinding__wrapper'>
+              <h2 className='HelpFinding__h2'>
+                Help Finding Information Online
+              </h2>
+
+              <p className='HelpFinding__p'>
+                Fully customizable and neatly organized components will help you
+                work faster without limiting creative freedom.
+              </p>
+
+              <dl className='HelpFinding__dl'>
+                {[
+                  {
+                    dt: 'Feature One',
+                    dd: 'Fully customizable and neatly organized components will help you work faster ',
+                  },
+                  {
+                    dt: 'Feature Two',
+                    dd: 'Unguarded and ardent. Deck in the. Rests in pleasure.',
+                  },
+                ].map((x, i) => (
+                  <div className='HelpFinding__dl__item' key={i}>
+                    <img
+                      className='HelpFinding__dl__item__img'
+                      src={`/images/HelpFinding__dl__item__img--${i}.svg`}
+                    />
+
+                    <dt className='HelpFinding__dl__item__dt'>{x.dt}</dt>
+                    <dd className='HelpFinding__dl__item__dd'>{x.dd}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div className='ManyReasons'>
+          <div className='container'>
+            <div className='ManyReasons__wrapper'>
+              <h2 className='ManyReasons__h2'>
+                There are many reasons to get down
+              </h2>
+
+              <p className='ManyReasons__p'>
+                There are many reasons to get down and start to get <br />
+                depressed about your situation.
+              </p>
+
+              <form className='ManyReasons__form'>
+                <input
+                  type='text'
+                  className='ManyReasons__form__input'
+                  placeholder='Your Email'
+                />
+
+                <button className='ManyReasons__form__button'>Send</button>
+              </form>
+
+              <small className='ManyReasons__small'>
+                No spam. Only releases, updates and discounts
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <footer className='Footer'>
+          <div className='container'>
+            <div className='Footer__top'>
+              <p className='Footer__top__p'>ARShakir</p>
+
+              <div className='Footer__top__socials'>
+                {[
+                  {
+                    k: 'google',
+                  },
+                  {
+                    k: 'tw',
+                  },
+                  {
+                    k: 'fb',
+                  },
+                ].map((x, i) => (
+                  <a className='Footer__top__socials__a'>
+                    <img
+                      className='Footer__top__socials__a__img'
+                      src={`/images/Footer__top__socials__a__img--${i}.svg`}
+                    />
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div className='Footer__middle'>
+              {[
+                {
+                  label: 'First',
+                },
+                {
+                  label: 'Second',
+                },
+                {
+                  label: 'Third',
+                },
+                {
+                  label: 'Fourth',
+                },
+              ].map((x, i) => (
+                <div className='Footer__middle__item' key={i}>
+                  <h3 className='Footer__middle__item__h3'>{x.label}</h3>
+
+                  <div className='Footer__middle__item__sub'>
+                    {[
+                      {
+                        label: 'First',
+                      },
+                      {
+                        label: 'Second',
+                      },
+                      {
+                        label: 'Third',
+                      },
+                      {
+                        label: 'Fourth',
+                      },
+                    ].map((y, j) => (
+                      <a key={i} className='Footer__middle__item__sub__a'>
+                        {y.label} page
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className='Footer__bottom'>
+              <p className='Footer__bottom__p'>&copy; Copyrights 2021</p>
+
+              <a className='Footer__bottom__a'>Privacy policy</a>
+
+              <p className='Footer__bottom__a'>Terms of service</p>
+            </div>
+          </div>
+        </footer>
       </div>
     </React.Fragment>
   )

@@ -393,8 +393,8 @@ source {
   }
 
   &--long {
-    padding-right: calc(var(--global-space) * 3);
-    padding-left: calc(var(--global-space) * 3);
+    padding-right: calc(var(--global-space) * 2);
+    padding-left: calc(var(--global-space) * 2);
   }
 }
 
@@ -568,6 +568,144 @@ source {
     height: 565px;
     opacity: 0.1;
     background-image: url('/images/YourChoice-a.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.Increase {
+  margin-top: calc(var(--global-space) * 10);
+
+  &__wrapper {
+    position: relative;
+    max-width: 470px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(var(--global-space) * -4);
+      left: calc(100% + calc(var(--global-space) * 3));
+      width: 442px;
+      height: 469px;
+      background-image: url('/images/Increase.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  &__h2 {
+    color: #99efd0;
+    font-family: Inter;
+    font-size: 42px;
+    font-weight: bold;
+
+    span {
+      color: #f2994a;
+    }
+  }
+
+  &__p {
+    margin-top: calc(var(--global-space) * 1);
+    color: #8476aa;
+    font-family: Gilroy-SemiBold;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-gap: calc(var(--global-space) * 1);
+    grid-template-columns: max-content;
+    margin-top: calc(var(--global-space) * 2);
+  }
+}
+
+.SimpleWays {
+  margin-top: calc(var(--global-space) * 10);
+
+  &__h2 {
+    color: #99efd0;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.33px;
+    text-align: center;
+
+    span {
+      color: #f2994a;
+    }
+  }
+
+  &__p {
+    margin-top: calc(var(--global-space) * 1.5);
+    color: #8476aa;
+    font-family: Gilroy-SemiBold;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+
+  &__dl {
+    display: grid;
+    grid-gap: calc(var(--global-space) * 1);
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: calc(var(--global-space) * 2);
+
+    &__item {
+      &__dt {
+        color: #99efd0;
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 0.33px;
+        text-align: center;
+      }
+
+      &__dd {
+        margin-top: calc(var(--global-space) * 1);
+        color: #8476aa;
+        font-family: Gilroy-SemiBold;
+        font-size: 15px;
+        letter-spacing: 0.2px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.NextProject {
+  margin-top: calc(var(--global-space) * 8);
+
+  &__h2 {
+    color: #99efd0;
+    font-family: Inter;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+
+    span {
+      color: #f2994a;
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    grid-gap: calc(var(--global-space) * 1);
+    grid-template-columns: max-content;
+    justify-content: center;
+    margin-top: calc(var(--global-space) * 2);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1203px;
+    height: 492px;
+    margin-top: calc(var(--global-space) * -6);
+    background-image: url('/images/NextProject.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

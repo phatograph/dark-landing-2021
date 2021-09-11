@@ -138,6 +138,74 @@ const Index: NextPage<{}> = () => {
             </dl>
           </div>
         </div>
+
+        <div className='Increase'>
+          <div className='container'>
+            <div className='Increase__wrapper'>
+              <h2 className='Increase__h2'>
+                Increase your business <span>traffic</span>
+              </h2>
+
+              <p className='Increase__p'>
+                We are committed to processing the information in order to
+                contact you and talk about your project.
+              </p>
+
+              <div className='Increase__buttons'>
+                <a className='Button Button--shadow Button--long'>Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='SimpleWays'>
+          <div className='container'>
+            <h2 className='SimpleWays__h2'>
+              3 Simple Ways To <span>Save</span> A Bunch <br />
+              Of <span>Money</span> When Buying A New Computer
+            </h2>
+
+            <p className='SimpleWays__p'>
+              Fully customizable and neatly organized components <br />
+              will help you work faster without limiting creative freedom.
+            </p>
+
+            <dl className='SimpleWays__dl'>
+              {[
+                {
+                  dt: '100+',
+                  dd: '5 Reasons To Purchase Desktop Computers',
+                },
+                {
+                  dt: '43,000+',
+                  dd: '3 Simple Ways To Save A Bunch Of Money When Buying A New Computer',
+                },
+                {
+                  dt: '30+',
+                  dd: 'A Discount Toner Cartridge Is Better Than Ever And You Will Save 50 Or More',
+                },
+              ].map((x, i) => (
+                <div className='SimpleWays__dl__item' key={i}>
+                  <dt className='SimpleWays__dl__item__dt'>{x.dt}</dt>
+                  <dd className='SimpleWays__dl__item__dd'>{x.dd}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+
+        <div className='NextProject'>
+          <div className='container'>
+            <h2 className='NextProject__h2'>
+              Create your <span>next project</span> <br />
+              with startup framework
+            </h2>
+
+            <div className='NextProject__buttons'>
+              <a className='Button Button--shadow'>Get Started</a>
+            </div>
+          </div>
+        </div>
       </div>
     </React.Fragment>
   )

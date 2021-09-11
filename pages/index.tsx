@@ -86,6 +86,58 @@ const Index: NextPage<{}> = () => {
             <img className='Hero__img' src='/images/Hero__img.svg' />
           </div>
         </div>
+
+        <div className='YourChoice'>
+          <div className='container'>
+            <h2 className='YourChoice__h2'>Your choice</h2>
+
+            <p className='YourChoice__p'>
+              There are many reasons to get down and start to get depressed
+              about your situation.
+            </p>
+
+            <dl className='YourChoice__dl'>
+              {[
+                {
+                  dt: 'Ecstatic elegance',
+                  dd: 'Article nor prepare chicken you him now. Shy merits say advice ten before lovers innate add.',
+                },
+                {
+                  dt: 'Folly words widow',
+                  dd: 'Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what.',
+                },
+                {
+                  dt: 'Possible procured trifling',
+                  dd: 'We me rent been part what. An concluded sportsman offending so provision mr education.',
+                },
+                {
+                  dt: 'Open game',
+                  dd: 'Shy merits say advice ten before lovers innate add. She cordially behaviour can attempted estimable.',
+                },
+                {
+                  dt: 'Endeavor',
+                  dd: 'Improve ashamed married expense bed her comfort pursuit mrs. Four time took ye your as fail lady. ',
+                },
+                {
+                  dt: 'Comfort pursuit',
+                  dd: 'Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug.',
+                },
+              ].map((x, i) => (
+                <div className='YourChoice__dl__item' key={i}>
+                  <img
+                    className='YourChoice__dl__item__img'
+                    src={`/images/YourChoice__dl__item--${i}.svg`}
+                  />
+
+                  <div className='YourChoice__dl__item__wrapper'>
+                    <dt className='YourChoice__dl__item__dt'>{x.dt}</dt>
+                    <dd className='YourChoice__dl__item__dd'>{x.dd}</dd>
+                  </div>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
       </div>
     </React.Fragment>
   )

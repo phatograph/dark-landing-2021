@@ -31,7 +31,7 @@ const MyApp = ({Component, pageProps}: AppProps) => {
   const title = ''
   const description = ''
 
-  const router = useRouter()
+  // const router = useRouter()
   // const t = _t(router.locale)
 
   return (

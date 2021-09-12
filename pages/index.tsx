@@ -310,8 +310,8 @@ const Index: NextPage<{}> = () => {
                   {
                     k: 'fb',
                   },
-                ].map((x, i) => (
-                  <a className='Footer__top__socials__a'>
+                ].map((_, i) => (
+                  <a className='Footer__top__socials__a' key={i}>
                     <img
                       className='Footer__top__socials__a__img'
                       src={`/images/Footer__top__socials__a__img--${i}.svg`}

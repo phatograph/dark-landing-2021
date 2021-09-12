@@ -28,8 +28,8 @@ const MyApp = ({Component, pageProps}: AppProps) => {
     smoothscroll.polyfill()
   }, [])
 
-  const title = ''
-  const description = ''
+  const title = 'Dark Landing by AR Shakir'
+  const description = 'https://dribbble.com/arshakir'
 
   // const router = useRouter()
   // const t = _t(router.locale)
@@ -48,14 +48,9 @@ const MyApp = ({Component, pageProps}: AppProps) => {
 
         <meta property='og:title' content={title} />
         <meta property='og:description' content={description} />
+        <meta property='og:image' content='/images/og.png' />
 
-        {false && (
-          <React.Fragment>
-            <meta property='og:image' content='/images/og.png' />
-
-            <link rel='icon' type='image/png' href='/images/pat.png' />
-          </React.Fragment>
-        )}
+        <link rel='icon' type='image/png' href='/images/logo.png' />
 
         {false && (
           <React.Fragment>

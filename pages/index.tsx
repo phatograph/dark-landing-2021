@@ -354,7 +354,7 @@ const Index: NextPage<{}> = () => {
                         label: 'Fourth',
                       },
                     ].map((y, j) => (
-                      <a key={i} className='Footer__middle__item__sub__a'>
+                      <a key={j} className='Footer__middle__item__sub__a'>
                         {y.label} page
                       </a>
                     ))}
